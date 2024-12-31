@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-  background-color: rgb(255, 166, 0);
+  background: linear-gradient(to right, #0000004e, #ff8800);
   background-size: contain;
   color: rgba(4, 4, 4, 0.758);
   padding: 10px 0;
@@ -62,29 +62,48 @@ section {
   background-size: cover;
   color: white;
   padding: 200px 20px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden; 
 }
 
 .hero h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  position: relative;
+  font-size: 6em;
+  z-index: 2;
 }
 
-button a {
-  text-decoration: none;
-  color: white;
-  background-color: #ff9800;
-  padding: 10px 20px;
-  border-radius: 5px;
+.hero p {
+  position: relative;
+  font-size: 1.2em;
+  z-index: 2;
 }
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+
+
 
 /* Container do menu */
+
 .menu-items {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: center; 
 }
 
+/* Itens de menu */
 .menu-item {
   width: 180px;
   text-align: center;
@@ -93,13 +112,17 @@ button a {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  margin: 0; 
 }
 
 .menu-item img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  overflow: hidden; 
 }
 
+/* Efeito de hover para os itens */
 .menu-item:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
@@ -109,11 +132,12 @@ button a {
 /* Container dos salgados */
 .menu2-items {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: center;
 }
 
+/* Itens de salgados */
 .menu2-item {
   width: 180px;
   text-align: center;
@@ -122,33 +146,23 @@ button a {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  margin: 0; 
 }
 
 .menu2-item img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  overflow: hidden; 
 }
 
+/* Efeito de hover para os itens */
 .menu2-item:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
   background-color: #f4f4f4;
 }
 
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-  .menu-item,
-  .menu2-item {
-    width: calc(33% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .menu-item,
-  .menu2-item {
-    width: 100%;
-  }
-}
 
 /* Footer */
 footer {
@@ -177,11 +191,11 @@ footer {
   transition: all 0.3s ease;
 }
 
-/* From Uiverse.io by akshat-patel28 */ 
+/* Icones */ 
 .button-container {
   display: flex;
   position: absolute;
-  background-color: rgba(245, 73, 144);
+  background-color: rgb(255, 166, 0);
   width: 250px;
   height: 40px;
   top: 80px;
