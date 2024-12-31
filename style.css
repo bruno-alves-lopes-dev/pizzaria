@@ -7,20 +7,43 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    
 }
 
+
+/* Background */
+
 body {
-  background: linear-gradient(to right, #ff010153, #9c9a9a94);
+   background-color: rgba(209, 209, 8, 0.815);
+}
+ 
+@keyframes light-animation {
+  0% {
+    background-position: 0% 0%; 
+  }
+  50% {
+    background-position: 100% 100%; 
+  }
+  100% {
+    background-position: 0% 0%; 
+  }
 }
 
 /* Header */
 header {
-  background: linear-gradient(to right, #0000004e, #ff8800);
-  background-size: contain;
-  color: rgba(4, 4, 4, 0.758);
-  padding: 10px 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  /* Gradiente translúcido */
+    url(./assets/imagens/capa.jpg) center/cover no-repeat;        /* Imagem de fundo */
+  padding: 20px 10px;
   text-align: center;
+  color: white;
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
 
 header .logo h1 {
   font-size: 2.5rem;
@@ -32,6 +55,7 @@ nav ul {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  
 }
 
 nav ul li {
@@ -65,6 +89,7 @@ section {
   position: relative;
   border-radius: 20px;
   overflow: hidden; 
+  
 }
 
 .hero h2 {
@@ -94,7 +119,7 @@ section {
 
 
 
-/* Container do menu */
+/* Itens de menu */
 
 .menu-items {
   display: flex;
@@ -103,7 +128,7 @@ section {
   justify-content: center; 
 }
 
-/* Itens de menu */
+
 .menu-item {
   width: 180px;
   text-align: center;
@@ -229,3 +254,26 @@ footer {
 .icon {
   font-size: 20px;
 }
+
+
+
+@keyframes fade-in-blur {
+  0% {
+    filter: blur(20px); /* Desfoque inicial */
+    opacity: 0;        /* Elemento invisível */
+  }
+  50% {
+    filter: blur(5px); /* Desfoque reduzindo */
+    opacity: 0.5;      /* Gradualmente aparecendo */
+  }
+  100% {
+    filter: blur(0);   /* Sem desfoque */
+    opacity: 1;        /* Totalmente visível */
+  }
+}
+
+[transition-style="in:fade:blur"] {
+  animation: fade-in-blur 2.5s ease-out forwards;
+}
+
+
