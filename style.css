@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #ff010153, #9c9a9a94);
+}
+
+/* Header */
+header {
+  background-color: rgb(255, 166, 0);
+  background-size: contain;
+  color: rgba(4, 4, 4, 0.758);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  background-image: url('./assets/imagens/Pizza\ gigante.jpg');
+  background-size: cover;
+  color: white;
+  padding: 200px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff9800;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Container do menu */
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  background-color: #f4f4f4;
+}
+
+/* Container dos salgados */
+.menu2-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu2-item {
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu2-item img {
+  width: 100%;
+  height: auto;
+}
+
+.menu2-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  background-color: #f4f4f4;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .menu-item,
+  .menu2-item {
+    width: calc(33% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-item,
+  .menu2-item {
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #b4660ec2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estyle do menu */
+#menu .menu-category {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 165, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#menu .menu-category:hover {
+  background-color: rgba(255, 165, 0, 0.5);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
