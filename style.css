@@ -7,6 +7,9 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+
     
 }
 
@@ -14,44 +17,31 @@ html {
 /* Background */
 
 body {
-   background-color: rgba(209, 209, 8, 0.815);
+   background-color: rgba(255, 255, 250, 0.568);
 }
  
-@keyframes light-animation {
-  0% {
-    background-position: 0% 0%; 
-  }
-  50% {
-    background-position: 100% 100%; 
-  }
-  100% {
-    background-position: 0% 0%; 
-  }
-}
 
 /* Header */
-header {
-  background: solid yellow center/cover no-repeat;    
-  padding: 5px 5px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
 
-  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
-
-  animation: fade-in-blur 2.5s ease-out forwards;
-}
-
-header .logo h1 {
-  font-family: "Rubik Vinyl", serif;
-  font-size: 4.5rem;
-  font-weight: 400;
-  font-style: normal;
-  
-  animation: fade-in-blur 2.5s ease-out forwards;
-}
 
 /* Navegação */
+ul {
+  background-color: rgb(229, 142, 3);
+  position: relative;
+  display: flex;
+  padding: 15px;
+  top: 1px;
+  margin-top: 5px;
+  border-radius: 15px;
+  
+}
+
+ul  :hover{
+  
+  transform: scale(1.05);
+  
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -72,7 +62,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffffff;
+  color: #b95d128e;
   transform: scale(1.1);
 }
 
@@ -91,6 +81,7 @@ section {
   position: relative;
   border-radius: 20px;
   overflow: hidden; 
+  font-family: "Inter", serif;
   
 }
 
@@ -98,16 +89,18 @@ section {
   position: relative;
   font-size: 6em;
   z-index: 2;
+  font-family: "Inter", serif;
 }
 
 .hero p {
   position: relative;
   font-size: 1.2em;
   z-index: 2;
+  font-family: "Inter", serif;
 }
 
 
-.hero::before {
+.hero:before {
   content: '';
   position: absolute;
   top: 0;
@@ -116,6 +109,7 @@ section {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
+  
 }
 
 
@@ -128,6 +122,7 @@ section {
   flex-wrap: wrap;
   gap: 10px; 
   justify-content: center; 
+  
 }
 
 
@@ -140,6 +135,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
   margin: 0; 
+  
 }
 
 .menu-item img {
@@ -166,6 +162,7 @@ section {
 
 /* Itens de salgados */
 .menu2-item {
+  
   width: 180px;
   text-align: center;
   padding: 10px;
@@ -225,7 +222,7 @@ footer {
   background-color: rgb(255, 166, 0);
   width: 250px;
   height: 40px;
-  top: 80px;
+  top: 12px;
   right: 10px;
   align-items: center;
   justify-content: space-around;
@@ -259,23 +256,5 @@ footer {
 
 
 
-@keyframes fade-in-blur {
-  0% {
-    filter: blur(20px); 
-    opacity: 0;        /* Elemento invisível */
-  }
-  50% {
-    filter: blur(5px); /* Desfoque reduzindo */
-    opacity: 0.5;      /* Gradualmente aparecendo */
-  }
-  100% {
-    filter: blur(0);   /* Sem desfoque */
-    opacity: 1;        /* Totalmente visível */
-  }
-}
-
-[transition-style="in:fade:blur"] {
-  animation: fade-in-blur 2.5s ease-out forwards;
-}
 
 
