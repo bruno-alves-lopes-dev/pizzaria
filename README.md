@@ -52,12 +52,13 @@ A ideia foi criar uma interface **atrativa, rápida e responsiva**, aplicando bo
 
 ## 📂 Estrutura do projeto
 
-pizzaria/
-├── assets/
-├── css/
-├── js/
-├── index.html
-└── README.md
+| Pasta/Arquivo | Descrição |
+|-------------|----------|
+| 📁 assets | Imagens e recursos visuais |
+| 🎨 css | Estilização do site |
+| ⚙️ js | Lógica e interatividade |
+| 🌐 index.html | Estrutura principal |
+| 📄 README.md | Documentação do projeto |
 
 ---
 
