@@ -1,4 +1,4 @@
-# 🍕 Pizzaria Web - Frontend Profissional
+# 🍕 Pizzaria Web - Frontend 
 
 <p align="center">
   <img src="./assets/preview.png" alt="Preview do projeto" width="100%">
