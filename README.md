@@ -66,7 +66,7 @@ A ideia foi criar uma interface **atrativa, rápida e responsiva**, aplicando bo
 
 ```bash
 # Clone o repositório
-git clone github.com/bruno-alves-lopes-dev/pizzaria
+git clone https://github.com/bruno-alves-lopes-dev/pizzaria.git
 
 # Acesse a pasta
 cd pizzaria
