@@ -51,6 +51,7 @@ A ideia foi criar uma interface **atrativa, rápida e responsiva**, aplicando bo
 ---
 
 ## 📂 Estrutura do projeto
+
 pizzaria/
 ├── assets/
 ├── css/
