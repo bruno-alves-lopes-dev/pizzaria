@@ -1,165 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Press+Start+2P&family=Rubik+Vinyl&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pizza do Bruno — sabor artesanal, ingredientes selecionados e delivery rápido." />
+  <title>Pizza do Bruno | Sabor que marca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#menu">Cardápio</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="#home"><span>🍕</span> Pizza do Bruno</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#menu">Cardápio</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="#pedido">Peça agora</a>
+      </div>
     </nav>
+  </header>
 
-    <section id="home">
-        <div class="hero">
-            <h2>A melhor pizza da cidade</h2>
-            <p>Venha experimentar nossas deliciosas pizzas!</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div>
+          <span class="tag">Sabor artesanal • Delivery rápido</span>
+          <h1>Pizzaria com cara de marca grande e sabor de casa.</h1>
+          <p>Pizzas, pastéis e salgados feitos com ingredientes selecionados para transformar qualquer noite em momento especial.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Ver cardápio</a>
+            <a class="btn btn-ghost" href="#contato">Falar no WhatsApp</a>
+          </div>
+          <div class="hero-metrics">
+            <article><strong>+10 anos</strong><span>de tradição</span></article>
+            <article><strong>100%</strong><span>ingredientes frescos</span></article>
+            <article><strong>Delivery</strong><span>rápido e caprichado</span></article>
+          </div>
         </div>
-        
-    </section>
-    
-    <section id="menu">
-        <h2>Cardápio</h2>
-        <p>Escolha entre nossas deliciosas opções de pizzas e salgados. Todos feitos com ingredientes frescos e de qualidade!</p>
-        
-        <p><span class="menu-category">Pizzas</span></p>
-        <style> </style>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="./assets/imagens/pizza_calabresa.png" alt="Pizza Margherita">
-                <h3>Pizza Margherita</h3>
-                <p>Tomate, queijo e manjericão.</p>
-            </div>
-            <div class="menu-item">
-                <img src="./assets/imagens/pizza_calabresa.png" alt="Pizza Margherita">
-                <h3>Pizza Margherita</h3>
-                <p>Tomate, queijo e manjericão.</p>
-            </div>
-            <div class="menu-item">
-                <img src="./assets/imagens/pizza_calabresa.png" alt="Pizza Margherita">
-                <h3>Pizza Margherita</h3>
-                <p>Tomate, queijo e manjericão.</p>
-            </div>
-            <div class="menu-item">
-                <img src="./assets/imagens/pizza_calabresa.png" alt="Pizza Margherita">
-                <h3>Pizza Margherita</h3>
-                <p>Tomate, queijo e manjericão.</p>
-            </div>
-            <div class="menu-item">
-                <img src="./assets/imagens/pizza_calabresa.png" alt="Pizza Margherita">
-                <h3>Pizza Margherita</h3>
-                <p>Tomate, queijo e manjericão.</p>
-            </div>
-        </div>
-    
-        <p><span class="menu-category">Pasteis</span></p>
-        
-        <div class="menu2-items">
-            <div class="menu2-item">
-                <img src="./assets/imagens/pastel.png" alt="Pizza Margherita">
-                <h3>Pastel de carne</h3>
-                <p>Carne moída, óregano, molho.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/pastel.png" alt="Pizza Margherita">
-                <h3>Pastel de quejo</h3>
-                <p>queijo, óregano, molho.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/pastel.png" alt="Pizza Margherita">
-                <h3>Pastel de pizza</h3>
-                <p>Carne moída, óregano, molho.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/pastel.png" alt="Pizza Margherita">
-                <h3>Pastel de frango</h3>
-                <p>frango desfiado, óregano, molho.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/pastel.png" alt="Pizza Margherita">
-                <h3>Pastel de guariroba</h3>
-                <p>guariroba picada, óregano, molho.</p>
-            </div>
-        </div>
-        
-        <p><span class="menu-category">Salgados</span></p>
-        <div class="menu2-items">
-            <div class="menu2-item">
-                <img src="./assets/imagens/coxinha.webp" alt="Pizza Margherita">
-                <h3>Coxinha de frango</h3>
-                <p>Carne moída, molho, catup.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/coxinha.webp" alt="Pizza Margherita">
-                <h3>Coxinha de carne</h3>
-                <p>Carne moída, molho, catup.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/coxinha.webp" alt="Pizza Margherita">
-                <h3>Coxinha de presunto</h3>
-                <p>Carne moída, molho, catup.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/coxinha.webp" alt="Pizza Margherita">
-                <h3>Coxinha de frango e quejo</h3>
-                <p>Carne moída, molho, catup.</p>
-            </div>
-            <div class="menu2-item">
-                <img src="./assets/imagens/coxinha.webp" alt="Pizza Margherita">
-                <h3>Pizza de carne e queijo</h3>
-                <p>Carne moída, molho, catup.</p>
-            </div>
-        </div>
-        
-        <div class="button-container">
-            <button class="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
-                    <path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
-                </svg>
-            </button>
-            <button class="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="icon">
-                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
-                </svg>
-            </button>
-            <button class="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
-                    <path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path>
-                </svg>
-            </button>
-            <button class="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="icon">
-                    <circle r="1" cy="21" cx="9"></circle>
-                    <circle r="1" cy="21" cx="20"></circle>
-                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                </svg>
-            </button>
-        </div>
+        <aside class="hero-card">
+          <img src="./assets/imagens/pizza e coca.png" alt="Combo de pizza com refrigerante" />
+          <div>
+            <small>Combo da casa</small>
+            <h2>Noite perfeita</h2>
+            <p>Pizza grande + refri gelado para compartilhar os melhores momentos.</p>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <section id="about">
-        <h2>Sobre Nós</h2>
-        <p>Com mais de 10 anos de tradição, a Pizza do Bruno é conhecida pela qualidade de seus ingredientes e pelo sabor inconfundível.</p>
+    <section class="section container" id="destaques">
+      <div class="section-head">
+        <span class="tag">Por que escolher a gente</span>
+        <h2>Uma experiência mais premium para o seu portfólio.</h2>
+      </div>
+      <div class="grid features">
+        <article class="card"><h3>Massa no ponto</h3><p>Textura leve, borda dourada e sabor marcante em cada fatia.</p></article>
+        <article class="card"><h3>Visual moderno</h3><p>Layout responsivo, elegante e pronto para causar boa impressão no GitHub.</p></article>
+        <article class="card"><h3>Código enxuto</h3><p>Estrutura organizada, reutilizável e fácil de manter sem excesso de complexidade.</p></article>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contato</h2>
-        <p>Email: contato@pizzadobruno.com</p>
-        <p>Telefone: (XX) XXXX-XXXX</p>
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head center">
+          <span class="tag">Cardápio</span>
+          <h2>Escolha seu favorito</h2>
+          <p>Um cardápio mais vivo, com categorias filtráveis e apresentação profissional.</p>
+        </div>
+        <div class="filters" id="filters"></div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Pizza do Bruno - Todos os direitos reservados</p>
-    </footer>
+    <section class="section container split" id="sobre">
+      <div class="about-media">
+        <img src="./assets/imagens/capa.jpg" alt="Pizza artesanal sendo servida" />
+      </div>
+      <div>
+        <span class="tag">Sobre nós</span>
+        <h2>Mais que pizza: uma marca com presença.</h2>
+        <p>A Pizza do Bruno une tradição, capricho e atendimento próximo. O objetivo deste projeto é transmitir valor visual, confiança e identidade forte logo no primeiro acesso.</p>
+        <div class="grid mini-cards">
+          <article class="card"><strong>Atendimento</strong><span> Humanizado e rápido.</span></article>
+          <article class="card"><strong>Ingredientes</strong><span> Selecionados com cuidado.</span></article>
+          <article class="card"><strong>Entrega</strong><span> Feita com agilidade.</span></article>
+          <article class="card"><strong>Marca</strong><span> Visual moderno e memorável.</span></article>
+        </div>
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <section class="section container" id="pedido">
+      <div class="cta">
+        <div>
+          <span class="tag">Peça agora</span>
+          <h2>Uma experiência que vai além do sabor.</h2>
+          <p>Cada pizza é preparada com dedicação e ingredientes selecionados, garantindo um sabor único que transforma qualquer momento em algo especial.</p>
+        </div>
+        <a class="btn btn-primary" href="#contato">Entrar em contato</a>
+      </div>
+    </section>
+
+    <section class="section footer-top" id="contato">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="#home">
+            <span>🍕</span> Pizza do Bruno
+          </a>
+          <p>Sabor, qualidade e dedicação em cada pedido. Será um prazer atender você!</p>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <p>📧 contato@pizzadobruno.com</p>
+          <p>📱 (34) 99999-9999</p>
+          <p>📍 Santa Vitória - MG</p>
+        </div>
+
+        <div>
+          <h3>Horário de funcionamento</h3>
+          <p>🕒 Segunda a Quinta: 18h às 23h</p>
+          <p>🕒 Sexta a Domingo: 18h às 00h</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Pizza do Bruno • Todos os direitos reservados.</p>
+  </footer>
+
+  <a class="float-whats" href="#contato" aria-label="Ir para contato">💬</a>
+  <script src="script.js"></script>
 </body>
 </html>

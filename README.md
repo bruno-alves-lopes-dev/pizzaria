@@ -1,28 +1,72 @@
-# Pizzaria 🍕
+# 🍕 Pizzaria Web - Frontend Profissional
 
-Landing page responsiva de uma pizzaria, desenvolvida para treinar HTML, CSS e JavaScript.
+<p align="center">
+  <img src="./assets/preview.png" alt="Preview do projeto" width="100%">
+</p>
 
-## 🔗 Demo
-👉 https://bruno-alves-lopes-dev.github.io/pizzaria/
+<p align="center">
+  <a href="https://SEU-LINK-AQUI.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Acessar%20Projeto-Online-00b894?style=for-the-badge&logo=vercel">
+  </a>
+</p>
 
-## ✨ Funcionalidades
-- Navegação entre seções
-- Seções: Cardápio, Sobre e Contato
-- Layout simples e responsivo
+---
 
-## 🛠️ Tecnologias Utilizadas
-- HTML5
-- CSS3
-- JavaScript
+## ✨ Sobre o projeto
 
-## ▶️ Como executar
-1. Clone o repositório
-2. Abra o arquivo `index.html` no navegador
+Este projeto foi desenvolvido com foco em **experiência do usuário, design moderno e performance**, simulando uma aplicação real de uma pizzaria digital.
 
-## 📌 Objetivo
-Projeto criado para praticar lógica, estruturação de páginas e estilização com CSS.
+A ideia foi criar uma interface **atrativa, rápida e responsiva**, aplicando boas práticas de desenvolvimento front-end.
 
-## 📌 Próximas melhorias
-- Menu mobile
-- Cardápio dinâmico com JavaScript
-- Melhorias de acessibilidade
+---
+
+## 🧠 O que foi aplicado
+
+- Estrutura semântica com HTML5
+- Estilização moderna com CSS3
+- Layout responsivo (mobile first 📱)
+- Manipulação de DOM com JavaScript
+- Componentização simples
+- Organização de código limpa
+- Boas práticas de UI/UX
+
+---
+
+## 🚀 Funcionalidades
+
+- 🍕 Listagem dinâmica de pizzas
+- 🔎 Filtro por categorias
+- 🛒 Interface preparada para carrinho
+- 📱 Design responsivo
+- ⚡ Carregamento rápido
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" />
+</p>
+
+---
+
+## 📂 Estrutura do projeto
+├── 📁 assets
+├── 📁 css
+├── 📁 js
+├── index.html
+└── README.md
+
+---
+
+## 🧪 Como rodar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/SEU-USUARIO/SEU-REPO.git
+
+# Acesse a pasta
+cd pizzaria
+
+# Abra o index.html no navegador
+```
