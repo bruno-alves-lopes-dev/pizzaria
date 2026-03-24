@@ -51,9 +51,10 @@ A ideia foi criar uma interface **atrativa, rápida e responsiva**, aplicando bo
 ---
 
 ## 📂 Estrutura do projeto
-├── 📁 assets
-├── 📁 css
-├── 📁 js
+pizzaria/
+├── assets/
+├── css/
+├── js/
 ├── index.html
 └── README.md
 
@@ -68,5 +69,5 @@ git clone https://github.com/SEU-USUARIO/SEU-REPO.git
 # Acesse a pasta
 cd pizzaria
 
-# Abra o index.html no navegador
+# Abra o arquivo index.html no navegador ou utilize Live Server
 ```
