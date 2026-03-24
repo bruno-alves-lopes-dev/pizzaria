@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://SEU-LINK-AQUI.vercel.app" target="_blank">
+  <a href="https://bruno-alves-lopes-dev.github.io/pizzaria/" target="_blank">
     <img src="https://img.shields.io/badge/Acessar%20Projeto-Online-00b894?style=for-the-badge&logo=vercel">
   </a>
 </p>
